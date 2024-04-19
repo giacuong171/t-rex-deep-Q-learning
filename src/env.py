@@ -110,5 +110,23 @@ def load_sprite_sheet(
     sprite_rect = sprites[0].get_rect()
     return sprites, sprite_rect
                 
+
+class Dino():
+    def __init__(self, sizex=-1, sizey=-1):
+        self.image,self.rect = load_sprite_sheet('dino.png',5,1,sizex,sizey,-1)
+        self.image_duck,self.rect_duck = load_sprite_sheet('dino_ducking.png',2,1,59,sizey,-1)
+        
+class Cactus():
+    pass
+
+class Bird():
+    pass
+
+class Ground():
+    pass
+
+class Cloud():
+    pass
+
 if __name__ == "__main__":
     pass
